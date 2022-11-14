@@ -1,0 +1,18 @@
+.tourSection__container {
+  display: flex;
+  flex-direction: row;
+}
+
+/* .tourSection-image {
+  display: flex;
+  flex: 1;
+} */
+
+.tourSection-image img {
+  width: 535px;
+}
+
+/* .tourSection__text {
+  display: flex;
+  flex: 1;
+} */
