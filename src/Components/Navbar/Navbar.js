@@ -20,28 +20,30 @@ const Navbar = () => {
         <p>Items</p>
       </div>
       <div className="navbar__mobile-navigation">
-        {mobileMenu ? (
-          <GrClose
-            size="40px"
-            color="white"
-            style={{ cursor: "pointer" }}
-            onClick={() => setMobileMenu(false)}
-          />
-        ) : (
-          <AiOutlineMenu
-            size="40px"
-            color="white"
-            style={{ cursor: "pointer" }}
-            onClick={() => setMobileMenu(true)}
-          />
-        )}
+        <div className="navbar__mobile-nav_react-icons">
+          {mobileMenu ? (
+            <GrClose
+              size="40px"
+              color="white"
+              style={{ cursor: "pointer" }}
+              onClick={() => setMobileMenu(false)}
+            />
+          ) : (
+            <AiOutlineMenu
+              size="40px"
+              color="white"
+              style={{ cursor: "pointer" }}
+              onClick={() => setMobileMenu(true)}
+            />
+          )}
+        </div>
         {mobileMenu && (
-          <div className="mobile__navigation-links">
-            <p>Home</p>
-            <p>Details</p>
-            <p>Contace</p>
-            <p>Address</p>
-            <p>Items</p>
+          <div className="mobile__navigation-links scale-up-top">
+            <p onClick={() => setMobileMenu(false)}>Home</p>
+            <p onClick={() => setMobileMenu(false)}>Details</p>
+            <p onClick={() => setMobileMenu(false)}>Contact</p>
+            <p onClick={() => setMobileMenu(false)}>Address</p>
+            <p onClick={() => setMobileMenu(false)}>Items</p>
           </div>
         )}
       </div>

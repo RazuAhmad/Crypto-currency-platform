@@ -2,7 +2,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  /* padding: 1rem; */
+}
+
+.navbar__logo {
+  margin-left: 20px;
 }
 
 .nav_Links {
@@ -12,14 +16,13 @@
 
 .nav_Links p {
   margin-right: 15px;
-  padding: 5px;
+  padding: 20px;
   font-size: 24px;
 }
 
 .nav_Links p:hover {
-  border-bottom: 1.5px solid yellow;
   cursor: pointer;
-  color: red;
+  color: purple;
 }
 
 .navbar__mobile-navigation {
@@ -31,10 +34,13 @@
     display: flex;
     flex-direction: column;
   }
+  .navbar__mobile-nav_react-icons {
+    margin-right: 0.8rem;
+  }
+
   .navbar__mobile-navigation p:hover {
-    border-bottom: solid yellow;
     cursor: pointer;
-    color: red;
+    color: purple;
   }
 
   .mobile__navigation-links {
@@ -42,14 +48,7 @@
     position: absolute;
     right: 0px;
     padding: 0 56px;
-    top: 115px;
-
-    /* For Safari 3.0+ */
-    -webkit-transition-property: background;
-    -webkit-transition-duration: 2s;
-    /* Standard syntax */
-    transition-property: background;
-    transition-duration: 2s;
+    top: 83px;
   }
   .mobile__navigation-links p {
     font-size: 25px;
@@ -57,5 +56,39 @@
 
   .nav_Links {
     display: none;
+  }
+}
+
+.scale-up-top {
+  -webkit-animation: scale-up-top 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-up-top 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes scale-up-top {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+  }
+}
+@keyframes scale-up-top {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
   }
 }
