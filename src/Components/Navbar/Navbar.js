@@ -8,7 +8,7 @@ const Navbar = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
 
   return (
-    <nav className="navbar__container">
+    <nav className="navbar__container navbar__bg">
       <div className="navbar__logo">
         <img style={{ width: "80px" }} src={navbarLogo} alt="navbarLogo" />
       </div>
@@ -38,7 +38,7 @@ const Navbar = () => {
           )}
         </div>
         {mobileMenu && (
-          <div className="mobile__navigation-links scale-up-top">
+          <div className="mobile__navigation-links scale-up-top navbar__bg">
             <p onClick={() => setMobileMenu(false)}>Home</p>
             <p onClick={() => setMobileMenu(false)}>Details</p>
             <p onClick={() => setMobileMenu(false)}>Contact</p>
