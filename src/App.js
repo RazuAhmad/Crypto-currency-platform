@@ -4,6 +4,7 @@ import "./App.css";
 import Overview from "./Components/Overview/Overview";
 import GetStarted from "./Components/GetStarted/GetStarted";
 import BitCoinJourney from "./Components/BitCoinJourney/BitCoinJourney";
+import LearnMore from "./Components/LearnMore/LearnMore";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <BitCoinJourney />
       <Overview />
       <GetStarted />
+      <LearnMore />
     </div>
   );
 };

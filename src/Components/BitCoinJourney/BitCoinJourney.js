@@ -9,7 +9,7 @@ const BitCoinJourney = () => {
         <img src={tourImg} alt="tourImage" />
       </div>
       <div className="BitCoinJourney__text">
-        <h1 className="title__text ">
+        <h1 className="title__text tracking-in-expand">
           Just have a Journey with Crypto <br />
           and get the Most out of It!
         </h1>

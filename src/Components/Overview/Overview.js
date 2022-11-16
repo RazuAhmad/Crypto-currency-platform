@@ -8,7 +8,7 @@ import arrowDownIcon from "../../images/arrow_down-icon.svg";
 const Overview = () => {
   return (
     <div className="overview__container section__padding">
-      <h1>Get a quick overview for</h1>
+      <h1 className="tracking-in-expand">Get a quick overview for</h1>
       <div className="overview__container_section-parent">
         <div className="overview__container-section">
           <p>

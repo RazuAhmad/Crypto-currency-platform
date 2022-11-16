@@ -4,8 +4,8 @@ import getStartedImg from "../../images/bitcoin-getStarted.svg";
 
 const GetStarted = () => {
   return (
-    <div className="getStarted__container section__padding getStartedBg">
-      <h1>Get started with Bitcoin</h1>
+    <div className="getStarted__container section__padding color-change-2x">
+      <h1 className="tracking-in-expand">Get started with Bitcoin</h1>
       <div className="getStarted__main-content">
         <div className="getStarted__textual-content">
           <p>

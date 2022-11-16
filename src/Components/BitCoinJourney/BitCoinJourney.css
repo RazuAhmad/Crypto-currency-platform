@@ -1,6 +1,10 @@
 .BitCoinJourney__container {
   display: flex;
   flex-direction: row;
+  -webkit-transition: all 1.2s 0s ease;
+  -moz-transition: all 1.2s 0s ease;
+  -o-transition: all 1.2s 0s ease;
+  transition: all 1.2s 0s ease;
 }
 
 .BitCoinJourney-image {

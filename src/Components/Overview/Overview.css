@@ -31,6 +31,15 @@
   width: 216px;
   padding: 17px 35px;
   cursor: pointer;
+
+  -webkit-transition: all 1.2s 0s ease;
+  -moz-transition: all 1.2s 0s ease;
+  -o-transition: all 1.2s 0s ease;
+  transition: all 1.2s 0s ease;
+}
+
+.overview__container-section:hover {
+  opacity: 0.4;
 }
 
 .arrowDownImg {
@@ -51,7 +60,7 @@
 @media screen and (max-width: 1090px) {
   .overview__container {
     /* overflow-x: hidden; */
-    background-size: cover;
+    /* background-size: cover; */
   }
   .overview__container_section-parent {
     display: flex;
@@ -60,4 +69,7 @@
   .overview__container-section {
     margin-bottom: 2rem;
   }
+}
+
+@media screen and (max-width: 850px) {
 }
