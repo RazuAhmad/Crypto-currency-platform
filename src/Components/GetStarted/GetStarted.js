@@ -11,13 +11,17 @@ const GetStarted = () => {
           <p>
             Bitcoin uses peer-to-peer technology to operate with no central
             authority or banks; managing transactions and the issuing of
-            bitcoins is carried out collectively by the network.{" "}
-            <b style={{ color: "red" }}>
-              Bitcoin is open-source; its design is public, nobody owns or
-              controls Bitcoin and everyone can take part.
-            </b>{" "}
-            Through many of its unique properties, Bitcoin allows exciting uses
-            that could not be covered by any previous payment system.
+            bitcoins is carried out collectively by the network. Through many of
+            its unique properties, Bitcoin allows exciting uses that could not
+            be covered by any previous payment system.
+          </p>
+          <p>
+            <button className="BitCoinJourney__button button__bg">
+              Learn More
+            </button>{" "}
+            <button className="anotherBackground BitCoinJourney__button">
+              Our Story
+            </button>
           </p>
         </div>
         <div className="getStartedImg-content">

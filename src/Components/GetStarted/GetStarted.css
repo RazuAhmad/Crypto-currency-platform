@@ -3,9 +3,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Satisfy&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lobster&family=Satisfy&display=swap");
+
 .getStarted__container h1 {
   text-align: center;
-  font-size: 55px;
+  font-size: 59px;
   font-family: "PT Serif", serif;
 }
 
@@ -54,4 +55,56 @@
     rgba(57, 57, 248, 0.88) 0%,
     rgba(0, 0, 0, 0.95) 100%
   );
+}
+
+.getStarted__main-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.getStarted__textual-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+  flex: 1;
+}
+
+.getStartedImg-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.getStartedImg-content img {
+  width: 100%;
+}
+
+.getStarted__ourStory-btn {
+}
+
+@media screen and (max-width: 1200px) {
+  .getStarted__main-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .getStartedImg-content img {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .getStarted__textual-content p {
+    font-size: 35px;
+  }
+
+  .getStartedImg-content img {
+    width: 80%;
+  }
+  .getStarted__container h1 {
+    font-size: 45px;
+  }
 }
